@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendez-vous et Paiement</title>
+    <link rel="stylesheet" href="rendez.css">
+</head>
+<body>
+    <div class="video-background">
+        
+        <header class="nav">
+            <a href="home.html"><img src="Home/DALL·E 2024-11-25 19.20.08 - A minimalist and modern logo design inspired by the Klinikum Stuttgart style. The logo features a stylized letter (K or similar) formed with clean, pa.webp" alt="Logo Clinique"></a>
+            <a href="doctors.html"><div><h4>~~Médecine & Nursing</h4></div></a>
+            <a href="service.html"><div><h4>~~Services</h4></div></a>
+            <a href="patient.html"><div><h4>~~Patients & Visiteurs</h4></div></a>
+            <a href="contact.html"><div><h4>~~Contact</h4></div></a>
+        </header>  
+    </div>
+
+    <main>
+        <div class="container">
+            <h1>Prendre Rendez-vous</h1>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="appointmentName">Nom du Patient</label>
+                    <input type="text" id="appointmentName" name="appointmentName" placeholder="Entrez le nom complet" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Date</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentTime">Heure</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                </div>
+                <button type="submit">Fixer le Rendez-vous</button>
+            </form>
+            <p id="appointmentConfirmation" class="hidden"></p>
+        </div>
+
+        <div class="container">
+            <h1>Effectuer un Paiement</h1>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="paymentName">Nom du Patient</label>
+                    <input type="text" id="paymentName" name="paymentName" placeholder="Entrez le nom complet" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentAmount">Montant (DT)</label>
+                    <input type="number" id="paymentAmount" name="paymentAmount" placeholder="Entrez le montant" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Méthode de Paiement</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="" disabled selected>Sélectionnez une méthode</option>
+                        <option value="cash">Espèces</option>
+                        <option value="card">Carte Bancaire</option>
+                        <option value="insurance">Autre</option>
+                    </select>
+                </div>
+                <button type="submit">Effectuer le Paiement</button>
+            </form>
+            <p id="paymentConfirmation" class="hidden"></p>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Clinique du Parc</h3>
+                <p>Adresse : 123 Avenue de la Santé, Tunis</p>
+                <p>Téléphone : +216 71 123 456</p>
+                <p>Email : contact@clinique-parc.tn</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="doctors.html">Médecine & Nursing</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clinique du Parc. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="rendez.js"></script>
+</body>
+</html>
